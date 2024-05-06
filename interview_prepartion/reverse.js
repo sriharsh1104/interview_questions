@@ -5,4 +5,4 @@ function reverseString(str) {
     return str.split('').reverse().join('')
 }
 
-console.log('answer', reverseString('interview'))
+console.log( reverseString('interview'))

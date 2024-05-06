@@ -9,4 +9,4 @@ function findlongestword(sentance) {
     }
     return longestword
 }
-console.log('findlongestword', findlongestword('my name is prashant sriharsh welcome to my github repo'))
+console.log( findlongestword('my name is prashant sriharsh welcome to my github repo'))
