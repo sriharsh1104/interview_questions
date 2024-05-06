@@ -1,0 +1,20 @@
+Q1) What is the significance of, and reason for, wrapping the entire content of a JavaScript source file in a function block?
+
+1) standard practise by libraries
+2) create private namespaces to avoid potential name clashes in javascript libraries and module.
+3) can disable this $referance with jQuery.noConflict();
+4) this technique can be used for ease referance alias for global variable.
+
+Q2) What is the significance, and what are the benefits, of including 'use strict' at the beginning of a JavaScript source file?
+
+significance => 
+used for Good practise 
+ forcing  stricker parsing and error handling in runtime code which was ignored or failed silently will generate errors or throw expections.
+
+ Benifits
+1) Debuge easy =>  ignored and silent failed error now will throw expections and generate errors 
+2) assigning value to undeclared varibable to create global variable (automatically) in strict mode gives error.
+3) Elmination => this value of undefined and null will set them globally automatically. but in strict mode it will throw error.
+4) Disallow duplicates parameter values=> in strict mode it will through error automatically detect error (hetic case to catch error otherwise  ) before ECMA script 2025 it use to ignore but after that is not longer a case
+5) eval afer() => functions and variables inside eval() statement are not  created containing scope
+6) Throw error on invalid usage => throw error when it will failed in strict mode but in non-strict mode it will fail silently for DELETE operator
